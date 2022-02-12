@@ -24,7 +24,7 @@ print(len(c) - len(delete_index))
 for i in range(len(c)):
     index = (ord(c[i]) - 97) #a면 0 65 90까지 
     result[index] += 1'''
-#하 걍 단어새는거네....ㅎ
+#단어새는거
 #print(max(result))
-#아 소수점은 97부터구나....ㅋㅋㅋ
+#소수점은 97부터
 #print(max(result))
