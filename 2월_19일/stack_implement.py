@@ -1,4 +1,5 @@
 import sys
+#이걸 넣어주면 개행으로 읽어서 제한 시간 초과 방지가능!!!!
 input = sys.stdin.readline
 
 
