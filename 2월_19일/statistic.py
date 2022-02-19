@@ -1,7 +1,9 @@
 from collections import Counter
 
 def get_freq(sorted_list):
+    freq_value = 0
     result = Counter(sorted_list)
+    
     freq_result = list(result.values()) #key와 values
 #유일하다면
         
@@ -15,6 +17,7 @@ def get_freq(sorted_list):
             if same_value ==2:
                 freq_value = list(result.keys())[i]
                 break
+            
     if same_value ==1:
         freq_value = same_index #key
         
@@ -22,22 +25,22 @@ def get_freq(sorted_list):
 
 n = int(input())
 #lstrip rstrip 개행 없애는것
-list = []
+a = []
 b = 0
 
 for i in range(n):
     b = int(input())
-    list.append(b)
+    a.append(b)
 
-list = sorted(list)
+a = sorted(a)
 #print(sum(list)//5)
-mean = int(round(sum(list)/n))
+mean = int(round(sum(a)/n))
 #index가 0 1 2 3 4 즉 len-1/2
 # 0 1-1/2
-index = int((len(list)-1)/2)
-median = list[index]
-freq = get_freq(list)
-length = list[-1] - list[0]
+index = int((len(a)-1)/2)
+median = a[index]
+freq = get_freq(a)
+length = a[-1] - a[0]
 
 print(mean)
 print(median)
