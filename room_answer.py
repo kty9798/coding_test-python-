@@ -7,7 +7,6 @@ n = int(sys.stdin.readline())
 
 time = [[0]* 2 for _ in range(n)]
 
-
 for i in range(n):
     s , e = map(int , sys.stdin.readline().split())
     time[i][0] = s   #시작시간
