@@ -14,6 +14,7 @@ list_m = list(map(int , sys.stdin.readline().split()))
 #print(list_n)
 #print(list_m)
 
+
 result = []
 for i in range(len(list_m)):
     if list_m[i] in list_n:

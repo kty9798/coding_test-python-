@@ -17,7 +17,7 @@ def get_freq(sorted_list):
             if same_value ==2:
                 freq_value = list(result.keys())[i]
                 break
-            
+
     if same_value ==1:
         freq_value = same_index #key
         
@@ -46,8 +46,6 @@ print(mean)
 print(median)
 print(freq)
 print(length)
-
-#print(list)
 
 
 
