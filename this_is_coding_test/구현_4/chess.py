@@ -19,7 +19,7 @@ for step in steps:
     after_x = x_locate + step[0]
     after_y = y_locate + step[1]
 
-    if after_x >0 and after_x <=8 and after_y >0 and after_y <=8:
+    if after_x >=1  and after_x <=8 and after_y >=1 and after_y <=8:
         print(after_x , after_y)
         result+=1
 
