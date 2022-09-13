@@ -1,11 +1,11 @@
 import sys
-input = sys.stdin.readline
-sys.setrecursionlimit(100**9)
+input = sys.stdin.readline # sys.stdin.readline
+sys.setrecursionlimit(100**9) #제귀 횟수 제한 
 
 
 N , M  , first = map(int , input().split())
 
-graph = [[] for _ in range(N+1)]  
+graph = [[] for _ in range(N+1)]  #
 path = []
 
 result = [0] * (N+1)
@@ -15,6 +15,7 @@ for _ in range(M):
     a , b = map(int , input().split())
     graph[a].append(b)
     graph[b].append(a)
+    #둘 다 넣어줌 
 
 for i in range(1, len(graph)):
     graph[i].sort()
