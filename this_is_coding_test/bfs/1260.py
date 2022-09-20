@@ -41,7 +41,7 @@ def bfs(first):
     queue = deque()
     queue.append(first)
     result.append(first)
-    visited_b[first] = 1
+    
 
     while queue:
         element = queue.popleft()
