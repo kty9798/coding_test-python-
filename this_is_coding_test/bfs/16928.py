@@ -2,6 +2,9 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
+#내려가는 뱀인지 사다리인지 다른
+#저장공간을 통하여 이동의 정보와 방향성을 제공해야 한다
+
 N, M = map(int , input().split())
 
 node = [[0] for i in range(101)]
